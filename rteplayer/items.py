@@ -9,6 +9,13 @@ import scrapy
 
 
 class RteplayerItem(scrapy.Item):
-    # define the fields for your item here like:
-    # name = scrapy.Field()
-    pass
+    """
+    This is the URL of a Show Episode, with the Show Name.
+    You can pass the URL to youtube-dl to get the episode.
+    """
+    show_name = scrapy.Field()
+    episode_num = scrapy.Field()
+    episode_date = scrapy.Field()
+    episode_image = scrapy.Field()
+    episode_description = scrapy.Field()
+    episode_url = scrapy.Field()
